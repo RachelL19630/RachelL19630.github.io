@@ -5,16 +5,67 @@
 <script src="../js/validate.js"></script>
 	</head>
 <body>
-		<h1>Important Tags in Vim</h1>
-		<h2>Here is some information about the tags that were taught in ITD 110 this year!</h2>
+		<h1>Important Things to know about in Vim</h1>
+		<h2>Here is some information in Vim that can help you in ITD 110</h2>
+		<h2>How to access your index.html file</h2>
 	<ol>
-		<li>To start, you need to open a vim webpage</li>
-					<li>Test before adding kpd</li>
-		</li>
-
-
-
-
-
-	</body>
+		<li>To start, you need to open the terminal</li>
+		<li>enter your website folder (cd website)</li>
+		<li>open index.html (type vim index.html)</li>
+	</ol>
+	<h2>What do you type into vim?</h2>
+	<h3>Start by typing this code into vim</h3>
+<pre>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+	&lt;head&gt;
+		&lt;title&gt;Homepage&lt;/title&gt;
+	&lt;/head&gt;
+	&lt;body&gt;
+		&lt;p&gt;Welcome to my first HTML page.&lt;/p&gt;
+	&lt;/body&gt;
+&lt;/html&gt;
+</pre>
+<h3>What is so important about this code?</h3>
+	<ul>
+		<li>starting code for all html documents</li> 
+		<li>has all the important things needed in a html document</li>
+		<li> allows for addtions in html document afterwards</li>
+	</ul>
+	<h3>Now you can add more tags! Here are a few examples</h3>
+	<dl>
+		<dt>The <code>&lt;p&gt;</code> tag</dt>
+			<dd>Paragraph tag; allows you to write down text in a paragraph</dd>
+		<dt>The <code>&lt;q&gt;</code> tag</dt>
+			<dd>Quotation tag; puts quotes on to text</dd>
+		<dt>The <code>&lt;blockquote&gt;</code> tag</dt>
+			<dd>Blockquote tag; tag used for bigger quotations that take up more than one line</dd>
+		<dt>The <code>&lt;hr&gt;</code> tag</dt>
+			<dd>Horizontal Rules tag; puts a horizontal line on the webpage</dd>
+	</dl>
+<h3>You can also add attributes, attributes are code that add on to tags</h3>
+	<dl>
+		<dt>The <code>&lt;mark&gt;</code> attribute</dt>
+			<dd>Highlight attribute; highlights the text</dd>
+		<dt>The <code>&lt;strong&gt;</code> attribute</dt>
+			<dd>Bold attribute;bolds the text</dd>
+		<dt>The <code>&lt;u&gt;</code> attribute</dt>
+			<dd>Underline attribute; underlines the text</dd>
+		<dt>The <code>&lt;em&gt;</code> attribute</dt>
+			<dd>Italic attribute; puts text into italics</dd>
+		<dt>The <code>&lt;del&gt;</code> attribute</dt>
+			<dd>Strike attribute; puts a line through the text</dd>
+	</dl>
+<h2>How to save your vim file</h2>
+<p>Press <kbd>:wq</kbd> if you want to save it, if you do not want to save, press <kbd>:q!</kbd></p>
+<h2>How can I check that my code is correct?</h2>
+<p>If you want to check your code, you can add a validator.<br>Here is the code needed to add said validator</p>
+<pre>
+&lt;script src="js/validate.js"&gt;&lt;/script&gt;
+</pre>
+<p><strong>Note: this code will work if you structured your files the exact way taught in Web Design Class</strong></p>
+<br>
+<p>Now that you have this code, once you look at your website, you will see either <br> <samp>HTML/CSS Valid!</samp> <br> Or <br> <samp>HTML/CSS NOT Valid</samp></p>
+<p>If your code is not vaild, It will likely tell you why, so you can go in and try to fix it</p>
+<h2>These are just a few cool thing that you can do in HTML! If you want to learn more, look on youtube or google for some cool things that you can do to your html document.</h2>
+</body>
 </html>
