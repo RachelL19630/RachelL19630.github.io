@@ -2,8 +2,6 @@
 
 The model has 4 layers 
 
-![TCP/IP 4 Layer Model](../images/TCPIP-Graph-Medium.png "TCP/IP 4 Layer Model")
-
 ## Application 
 
 Protocols in this layer include:
@@ -35,3 +33,9 @@ Protocols in this layer include:
 - Bluetooth 
 - LTE (cell service)
 - Ethernet (physical wire)
+
+## Diagram of how the Layers Work
+
+![TCP/IP 4 Layer Model](../images/TCPIP-Graph-Medium.png "TCP/IP 4 Layer Model")
+
+
