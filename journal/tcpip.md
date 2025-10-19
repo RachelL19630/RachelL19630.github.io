@@ -2,6 +2,13 @@
 
 The model has 4 layers 
 
+	<img src="https://library.ucf.edu/news/books-sorted-by-color/lt="
+	     alt="TCP/IP 4 Layer model"
+	     srcset= "../images/TCPIP-Graph-Small.png 240w,
+	     ../images/TCPIP-Graph-Medium.png 480,
+		 ../images/TCPIP-Graph-Large.png 768w"
+	     sizes="(max-width:480px) 95vw,(max-width:800px) 45vw, 30vw">
+
 ## Application 
 
 Protocols in this layer include:
