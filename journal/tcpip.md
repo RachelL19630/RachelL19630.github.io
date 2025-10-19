@@ -2,7 +2,7 @@
 
 The model has 4 layers 
 
-	<img src="https://library.ucf.edu/news/books-sorted-by-color/lt="
+	<img src="../images/TCPIP-Graph-Small.png"
 	     alt="TCP/IP 4 Layer model"
 	     srcset= "../images/TCPIP-Graph-Small.png 240w,
 	     ../images/TCPIP-Graph-Medium.png 480,
