@@ -27,7 +27,7 @@
 
 I want to take this drawing 
 
-*Insert Drawing Here*
+![Paper Photo of Trees](../../images/Paper-Picture-Trees.png "Tree Photo, papaper") 
 
 and turn it into a digital image. 
 
