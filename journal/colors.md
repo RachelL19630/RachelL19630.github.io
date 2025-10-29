@@ -49,4 +49,4 @@ This can be done by using Hexadecimal. For this image, the Hexadecimal is:
 
 This makes the image of 
 
-![Pixel Photo, Trees](../../images/ Pixel-Picture-Trees.png "Tree photo pixels") 
+![Pixel Photo, Trees](../../images/Pixel-Picture-Trees.png "Tree photo pixels") 
