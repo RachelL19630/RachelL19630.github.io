@@ -23,4 +23,12 @@
   
 ## The Hexadecimal Number System is used to create photos 
 
-Here is an example 
+### Here is an example 
+
+I want to take this drawing 
+
+*Insert Drawing Here*
+
+and turn it into a digital image. 
+
+This can be done 
