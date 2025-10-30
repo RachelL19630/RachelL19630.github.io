@@ -1,25 +1,25 @@
 # Hexademical Number System
 
-## Hexadecimal compared to Decimal System
+## Hexadecimal compared to Decimal System and Binary (Nibble)
 
-| Decimal (DEC) | Hexadecimal |
-| :-----------: | :---------: |
-| 0             | 0           |
-| 1             | 1           |
-| 2             | 2           |
-| 3             | 3           |
-| 4             | 4           |
-| 5             | 5           |
-| 6             | 6           |
-| 7             | 7           |
-| 8             | 8           |
-| 9             | 9           |
-| 10            | A           |
-| 11            | B           |
-| 12            | C           |
-| 13            | D           |
-| 14            | E           |
-| 15            | F           |
+| Decimal (DEC) | Hexadecimal | Binary |
+| :-----------: | :---------: | :----: |
+| 0             | 0           | 0000   |
+| 1             | 1           | 0001   |
+| 2             | 2           | 0010   |
+| 3             | 3           | 0011   |
+| 4             | 4           | 0100   |
+| 5             | 5           | 0101   |
+| 6             | 6           | 0110   |
+| 7             | 7           | 0111   |
+| 8             | 8           | 1000   |
+| 9             | 9           | 1001   |
+| 10            | A           | 1010   |
+| 11            | B           | 1011   |
+| 12            | C           | 1100   |
+| 13            | D           | 1101   |
+| 14            | E           | 1110   |
+| 15            | F           | 1111   |
   
 ## The Hexadecimal Number System is used to create photos 
 
