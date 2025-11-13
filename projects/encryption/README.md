@@ -49,24 +49,24 @@ Assume that each packet can hold two bytes. Fill in the packet information below
     =========
     Packet 1:
 
-    Source: [Your Name]
-    Destination: [Partner's Name]  
+    Source: [Rachel]
+    Destination: [Marta]  
     Sequence: 1/3
-    Data: [binary for char 1] [binary for char 2]
+    Data: [01100111] [01110101]
     =========
     Packet 2:
 
-    Source: [Your Name]
-    Destination: [Partner's Name]
+    Source: [Rachel]
+    Destination: [Marta]
     Sequence: 2/3 
-    Data: [binary for char 3] [binary for char 4]
+    Data: [00101011] [01000100]
     =========
     Packet 3:
 
-    Source: [Your Name]
-    Destination: [Partner's Name]
+    Source: [Rachel]
+    Destination: [Marta]
     Sequence: 3/3
-    Data: [binary for char 5] [binary for char 6]
+    Data: [01101011] [01001001]
     =========
 
 ## Part 4: Reflection Questions
