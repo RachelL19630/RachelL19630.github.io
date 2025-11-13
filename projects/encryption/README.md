@@ -17,13 +17,13 @@ and the messages that you received.
 
 (If you used something other than the caesar cipher here, describe what you did)
 
-| Encoded Message                        | Decoded Message                       | Key |
-| -------------------------------------- | ------------------------------------- | --- |
-| WTAAD                                  | HELLO                                 | 15  |
-| TVOOZ                                  | SUNNY                                 | 1   |
-| DLHAOLY AVKHF                          | WEATHER TODAY                         | 7   |
-| YGDRCIG ENCUU                          | WEBPAGE CLASS                         | 2   |
-| JUNG QB LBH GUVAX BS JRO QRFVTA FB SNE | WHAT DO YOU THINK OF WEBDESIGN SO FAR | 13  |
+| Encoded Message                        | Decoded Message                        | Key |
+| -------------------------------------- | -------------------------------------- | --- |
+| WTAAD                                  | HELLO                                  | 15  |
+| TVOOZ                                  | SUNNY                                  | 1   |
+| DLHAOLY AVKHF                          | WEATHER TODAY                          | 7   |
+| YGDRCIG ENCUU                          | WEBPAGE CLASS                          | 2   |
+| JUNG QB LBH GUVAX BS JRO QRFVTA FB SNE | WHAT DO YOU THINK OF WEB DESIGN SO FAR | 13  |
 
 ## Part 3: Connection to TCP/IP Model
 
