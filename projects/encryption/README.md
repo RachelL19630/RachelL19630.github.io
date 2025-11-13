@@ -72,6 +72,7 @@ Assume that each packet can hold two bytes. Fill in the packet information below
 ## Part 4: Reflection Questions
 
 - What is the difference between symmetric and asymmetric encryption? What purpose did each serve in this simulation?
+	Asymmetric encryption is using a public and private key of a computer (to encrypt with the public key and decrypt with the private). The symmetric encryption is when there is a shared secret used to encrypt and decrypt all the messages.  
 - Why is it important that this protocol uses a new key for each message?
 - Why is it important that you never share your secret key?
 - In the transport layer, do these messages use TCP or UDP? Why?
