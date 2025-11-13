@@ -72,14 +72,14 @@ Assume that each packet can hold two bytes. Fill in the packet information below
 ## Part 4: Reflection Questions
 
 - What is the difference between symmetric and asymmetric encryption? What purpose did each serve in this simulation?
-	Asymmetric encryption is using a public and private key of a computer (to encrypt with the public key and decrypt with the private). The symmetric encryption is when there is a shared secret used to encrypt and decrypt all the messages.  
+	- Asymmetric encryption is using a public and private key of a computer (to encrypt with the public key and decrypt with the private). The symmetric encryption is when there is a shared secret used to encrypt and decrypt all the messages.  
 - Why is it important that this protocol uses a new key for each message?
-	This protocol using a new key each time is important for security. If someone tries to hack the messages, they could maybe hack one, but because the message changes each time, the person would not be able to hack the message before or the message after, meaning that the conversation is still secure and private. 
+	- This protocol using a new key each time is important for security. If someone tries to hack the messages, they could maybe hack one, but because the message changes each time, the person would not be able to hack the message before or the message after, meaning that the conversation is still secure and private. 
 - Why is it important that you never share your secret key?
-	It is important that you never share your secret key, because once it is out there and know, all of your messages (if you do not make a new key each time) can be easily decrypted and found out, leading to a leak or breach in the security of the conversations you are having online. 
+	- It is important that you never share your secret key, because once it is out there and know, all of your messages (if you do not make a new key each time) can be easily decrypted and found out, leading to a leak or breach in the security of the conversations you are having online. 
 - In the transport layer, do these messages use TCP or UDP? Why?
-	In the Transport layer, the messages use TCP because path to the other computer is known (so you do not need UDP) and you are sending multiple messages back and forth. 
+	- In the Transport layer, the messages use TCP because path to the other computer is known (so you do not need UDP) and you are sending multiple messages back and forth. 
 - Now that you've created packets in the transport layer, give a short explanation of what happens to these packets in the internet layer and in the link layer.
-	Once the packets are done in the trasport layer, the internet layer will route the packets from the source computer to the destination computer. The link layer will then transmit the computer through a physical medium. This medium could be wifi, ethernet, etc.
+	- Once the packets are done in the trasport layer, the internet layer will route the packets from the source computer to the destination computer. The link layer will then transmit the computer through a physical medium. This medium could be wifi, ethernet, etc.
 - This protocol successfully encrypts the **content** of the message. Even though and adversary in the middle can't read the content of the message, what other information can they still see?
-	The adversary in the middle can see that content of the message, they can see the messages as well as a public key if the public key is used.  
+	- The adversary in the middle can see that content of the message, they can see the messages as well as a public key if the public key is used.  
