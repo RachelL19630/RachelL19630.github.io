@@ -1,0 +1,8 @@
+
+ table, tr, th, td {
+	 border: 5px dashed RebeccaPurple;
+	 border-collapse: collapse;
+ }
+ body{
+	 background-color: LemonChiffon;
+ 	color: DimGray;
