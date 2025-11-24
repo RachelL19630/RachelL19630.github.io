@@ -1,9 +1,29 @@
 
  table, tr, th, td {
-	 border: 5px dashed RebeccaPurple;
+	 border: 3px solid #3b50b2;
 	 border-collapse: collapse;
- }
- body{
-	 background-color: LemonChiffon;
- 	color: #000000;
 }
+ body{
+	 background-color: lightblue;
+ 	color: #225763;
+}	
+#secondLink{ 
+	background-color: #3b50b2;	
+	color: aliceblue;
+}
+#firstLink{
+	background-color: #3b50b2;
+	color: aliceblue;
+}
+#info{
+	background-color: lightskyblue;
+}	
+.checker{
+	background-color: #41d8bf;
+}	
+.checkered{
+	background-color: #2f89b3;
+}	
+#title{
+	background-color:skyblue;
+}	
