@@ -6,6 +6,16 @@
  body{
 	 background-color: lightblue;
  	color: #225763;
+	font-family:"Helvetica", "Tahoma", "Ariel" sans-serif;
+}	
+h1{
+	border: 3px solid aliceblue;
+	padding: 30px;
+	border-bottom: 5px dotted aliceblue;
+	margin:20px;
+}	
+table{
+	margin:auto;	
 }	
 #secondLink{ 
 	background-color: #3b50b2;	
