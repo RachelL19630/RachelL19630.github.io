@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Ice Cream Form</title>
+		<script src="../js/validate.js"></script>
+	</head>
+	<body>
+		<form action="http://httpbin.org/post" method="post">
+			<h1>You're Invited to an Ice Cream Party!</h1>
+			<p>Please fill out this form to help us plan<p>
+			<br>
+			<p>What is your email address?</p>
+			<input type="email" name="youremail" required>
+			<br>
+			<p>What is your phone number?</p>
+			<input type="text" name="your phone">
+			<br>
+			<p>How many people will you bring with you to the party?</p>
+			<input type="text" name="peoplenumber">
+			<br>
+			<p>What is your favorite flavor of ice cream?</p>
+			<input type="radio" id="V" name="Flavor" value="Vanilla">
+			<label for"V">Vanilla</label>
+			<input type="radio" name="Flavor" id="Cc" value="Chocolate Chip">
+			<label for"Cc">Chocolate Chip</label>
+			<input type="radio" name="Flavor" value="Strawberry" id="S">
+			<label for="S">Strawberry</label>
+			<input type="radio" id="o"name="Flavor" value="Other">
+			<label for="o">Other</label>
+			<br>
+			<p>Which toppings do you like?</p>
+			<input type="checkbox" name="Sprinkles" value="yes" id="sprinkles">
+			<label for="sprinkles">Sprinkles</label>
+			<input type="checkbox" name="Magic Shell" value="yes" id="magicshell">
+			<label for="magicshell">Magic Shell</label>
+			
+			<input type="checkbox" name="Chocolate Chips" value="yes" id="CC">
+			<label for="CC">Chocolate Chips</label>
+			<input type="checkbox" name="Gummy Bears" value="yes" id="GB">
+			<label for="GB">Gummy Bears</label>
+			<input type="checkbox" name="Other" value="yes" id="O">
+			<label for="O">Other</label>
+			<br>
+			<br>
+			<label for"Dropdown">What kind of entertainment should we have at the party?</label>
+			<select id="Dropdown" name="Dropdown">
+				<option value="option0">Choose</option>
+				<option value="option1">Balloon Animals</option>
+				<option value="option2">Bounce House</option>
+				<option value="option3">Clown</option>
+				<option value="option4">Cornhole</option>
+				<option value="option5">DJ</option>
+				<option value="option6">Face Painting</option>
+				<option value"option7">Magician</option>
+			</select>
+			<br>
+			<p>Do you have any other suggestions or comments?</p>
+			<input type="text" name="other info">
+			<br>
+			<br>
+			<button type="submit">Submit</button>
+			
+		</form>	
