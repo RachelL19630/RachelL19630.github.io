@@ -1,0 +1,14 @@
+body{
+	background-color: lightblue;
+	color: black;
+}	
+
+h1{
+	color: #393939;
+	border: solid gray;
+	margin: auto;
+}
+#ERQuote{
+	border-bottom: dashed darkgray;
+	padding-bottom: 10px;
+}	
