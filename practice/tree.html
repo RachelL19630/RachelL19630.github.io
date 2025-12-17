@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title> Trees!</title>
+		<script src="../js/validate.js"></script>
+<style>
+	body{ 
+		height: 100vh;
+		background-image: linear-gradient(
+			to bottom,
+			#a257b5,
+			#0f0a2e)	
+	}	
+	h1{
+		color:white;
+		text-align: center;
+	}
+	#container{
+		background-color:white;
+		height:800px;
+		width:600px;
+		margin: auto;
+		position: relative;
+	}	
+	#tree{
+		width: 0px;
+		height: 0px;
+		border-bottom: 800px solid green;
+		border-left: 300px solid transparent;
+		border-right: 300px solid transparent;
+	}	
+	#box{
+		width: 50px;
+		height: 50px;
+		position: absolute;
+		left: 300px;
+		top: 200px;
+		background-color: red;
+	}
+	#heart{
+	position:absolute;
+	left:200px;
+	top:400px;
+		height: 50px;
+  aspect-ratio: 1;
+  --_m: radial-gradient(#000 69%,#0000 70%) 84.5%/50%;
+  -webkit-mask-box-image: var(--_m);
+             mask-border: var(--_m);
+  clip-path: polygon(-41% 0,50% 91%, 141% 0);
+  background: #cc333f;
+}
+@supports not (-webkit-mask-box-image: var(--_m)) {
+  
+#heart {
+    mask:
+     radial-gradient(at 70% 31%,#000 29%,#0000 30%),
+     radial-gradient(at 30% 31%,#000 29%,#0000 30%),
+     conic-gradient(#000 0 0) bottom/100% 50% no-repeat;
+  }
+	}
+	#star{
+	width: 140px;
+	position: absolute;
+	left:230px;
+	top: -16px;
+  aspect-ratio: 1;
+  background: #F8CA00;
+  clip-path: polygon(50% 0,
+    calc(50%*(1 + sin(.4turn))) calc(50%*(1 - cos(.4turn))),
+    calc(50%*(1 - sin(.2turn))) calc(50%*(1 - cos(.2turn))),
+    calc(50%*(1 + sin(.2turn))) calc(50%*(1 - cos(.2turn))),
+    calc(50%*(1 - sin(.4turn))) calc(50%*(1 - cos(.4turn)))
+   );
+	}
+#flower{
+  width: 80px;
+  position: absolute;
+  left: 400px;
+  top: 500px;
+  background-color: skyblue;
+  aspect-ratio: 1;
+  --g:/27.676% 27.676% radial-gradient(#000 calc(71% - 1px),#0000 71%) no-repeat;
+  mask: 91.573% 77.779% var(--g),59.755% 99.039% var(--g),22.221% 91.573% var(--g),0.961% 59.755% var(--g),8.427% 22.221% var(--g),40.245% 0.961% var(--g),77.779% 8.427% var(--g),99.039% 40.245% var(--g),radial-gradient(100% 100%,#000 33.409%,#0000 calc(33.409% + 1px));
+}	
+#starburst{
+  width: 100px; /* adjust to control the size */
+  aspect-ratio: 1;
+  background-color: RebeccaPurple;
+  position: absolute;
+  left: 100px;
+  top: 600px;
+  clip-path: polygon(100% 50%,78.98% 57.76%,93.3% 75%,71.21% 71.21%,75% 93.3%,57.76% 78.98%,50% 100%,42.24% 78.98%,25% 93.3%,28.79% 71.21%,6.7% 75%,21.02% 57.76%,0% 50%,21.02% 42.24%,6.7% 25%,28.79% 28.79%,25% 6.7%,42.24% 21.02%,50% 0%,57.76% 21.02%,75% 6.7%,71.21% 28.79%,93.3% 25%,78.98% 42.24%);
+}	
+#circle{
+	position: absolute;
+	left: 450px;
+	top: 700px;
+	width: 80px;
+	height: 80px;
+	border-radius: 40px;
+	background-color: orange;
+}	
+</style>		
+	</head>
+	<body>
+		<h1>Behold! A Tree!</h1>
+		<div id="container">
+		<div id="tree">
+			<div id="box">
+			</div>
+			<div id="heart">
+			</div>
+			<div id="star">
+			</div>
+			<div id="flower">
+			</div>
+			<div id="starburst">
+			</div>	
+			<div id="circle">
+			</div>	
+		</div>
+		</div>
+	</body>
+</html>	
