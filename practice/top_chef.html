@@ -8,10 +8,10 @@
 	height: 100vh;
 	gap: 10px;
 	grid:
-		'nav' 1fr
-		'hero' 4fr
+		'nav' 2fr
+		'hero' 6fr
 		'head' 1fr
-		'card' 2fr
+		'card' 5fr
 		'foot' 3fr
 		/1fr;
 }
@@ -19,15 +19,15 @@
 	grid-area: nav;
 	background-color: green;
 	color:black;
-	font-size:30px;
+	font-size:20px;
 	text-align:center;
 	font-family:Serif;
 }
 #hero{
 	grid-area:hero;
-	background-color: green;
+	background-color: black;
 	color:black;
-	font-size:30px;
+	font-size:20px;
 	font-family:Serif;
 	text-align:center;
 }
@@ -35,7 +35,7 @@
 	grid-area:head;
 	background-color: green;
 	color:black;
-	font-size:30px;
+	font-size:20px;
 	font-family:Serif;
 	text-align:center;
 }
@@ -43,7 +43,7 @@
 	grid-area:card;
 	background-color: green;
 	color:black;
-	font-size:30px;
+	font-size:20px;
 	font-family:Serif;
 	text-align:center;
 }
@@ -51,40 +51,46 @@
 	grid-area:foot;
 	background-color: #33FF33;
 	color:black;
-	font-size:30px;
+	font-size:20px;
 	font-family:Serif;
 	text-align:center;
 }	
 #grid2{
 	display: grid;
+	margin-left:5px;
+	margin-right:5px;
 	gap: 10px;
-	height:20px;
+	height:15px;
 	grid:
 		'drinks food specials online' 1fr
 		/1fr 1fr 1fr 1fr;
 }	
 #drinks{
 	grid-area:drinks;
-	background-color: green;
+	background-color: #33FF33;
 	color:black;
-	font-size:30px;
+	border: solid black;
+	font-size:20px;
 	font-family:Serif;
 	text-align:center;
 }
 #food{
 	grid-area:food;
-	background-color: green;
+	background-color: #33FF33;
+	border: solid black;
 	color:black;
 	text-align:center;
 }
 #specials{
 	grid-area:specials;
-	background-color: green;
+	background-color: #33FF33;
+	border: solid black;
 	color: black;
 }
 #online{
 	grid-area:online;
-	background-color: green;
+	background-color: #33FF33;
+	border: solid black;
 	color: black;
 }	
 #latte{
@@ -105,10 +111,21 @@
 #grid3{
 	display: grid;
 	gap: 10px;
-	height:20px;
+	margin-top: 10px;
+	height:150px;
 	grid:
 		'latte scone bake' 1fr
 		/1fr 1fr 1fr;
+}
+#CTA{
+	display: content-box;
+	height: 40px;
+	width: 80px;
+	border: solid white;
+	margin-left: 825px;
+	background-color: #44EE44;
+	margin-top: -50px;
+	margin-bottom: 20px
 }
 </style>
 	</head>
@@ -116,22 +133,36 @@
 		<div class="grid">
 			<div id="nav">
 				<div id="grid2">
-					<div id="drinks"></div>
-					<div id="food"></div>
-					<div id="specials"></div>
-					<div id="online"></div>
+					<div id="drinks">
+				<a href="https://www.amazon.com/">Drinks</a></div>
+					<div id="food"><a href="https://www.amazon.com/">Food</a></div>
+					<div id="specials"><a href="https://www.amazon.com/">Specials</a></div>
+					<div id="online"><a href="https://www.amazon.com/">Online Orders</a></div>
 				</div>
 			</div>	
-			<div id="hero"></div>
-			<div id="head"></div>
+			<div id="hero">
+				<img src="../images/Coffee_Shop.png"><!----Creator: jonny_automatic---->
+				<div id="CTA">Explore</div>	
+			</div>
+			<div id="head">
+				<h2>See our Monthly Specials!</h2>				
+			</div>
 			<div id="card">
 				<div id="grid3">
-					<div id="latte"</div>
-					<div id="scone"</div>
-					<div id="bake"</div>
+					<div id="latte">
+						<a href="https://commons.wikimedia.org/wiki/File:Caffe_Latte_at_Pulse_Cafe.jpg"><img src="../images/latte.jpg"></a>
+					</div>
+					<div id="scone">
+						<a href="https://commons.wikimedia.org/wiki/File:Lemon_Scones_(6849625315).jpg"><img src="../images/scone.jpg"></a><!-----Authorof image is Ben Kua from Toronto, Canada---->
+					</div>
+					<div id="bake">
+						<a href="https://pixnio.com/food-and-drink/desserts-cakes/food-baked-goods-sweet-delicious-cake-sugar-chocolate-pastry"><img src="../images/Baked.jpg"></a>
+					</div>
 				</div>
 			</div>
-			<div id="foot"></div>
+			<div id="foot">
+				<p>Footer:bear the might, and naturns, who would fards of devoutly takes, and native have, the and swear to say we know no more; and the ills be: that that is and to say we himself mind end the pause. To disprises of this he arrows of regardelay, and the spurns, and</p><!-----Giberish----->
+			</div>
 		</div> 
 	</body>
 </html>	
