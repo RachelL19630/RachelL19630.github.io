@@ -33,5 +33,48 @@ h1{
 	color:black;
 }
 img{
-	margin:center;
+	margin:auto;
+}
+#searchbar{
+	display:grid;
+	height:5vh;
+	gap:5px;
+	grid:
+'home about activities accomodations FAQ' 1fr
+/1fr	 1fr	 1fr		 1fr	 1fr;
+}
+#home{
+	grid-area:home;
+	border: solid black;
+	color:black;
+	font-size:4vh;
+	text-align:center;
+}
+#about{
+	grid-area:about;
+	color:black;
+	font-size:4vh;
+	border: solid black;
+	text-align:center;
+}
+#activities{
+	grid-area:activities;
+	border: solid black;
+	font-size:4vh;
+	color:black;
+	text-align:center;
+}
+#accomodations{
+	grid-area:accomodations;
+	border: solid black;
+	font-size:4vh;
+	color:black;
+	text-align:center;
+}
+#FAQ{
+	grid-area:FAQ;
+	font-size:4vh;
+	border: solid black;
+	color:black;
+	text-align:center
 }
