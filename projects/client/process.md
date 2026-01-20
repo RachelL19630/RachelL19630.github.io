@@ -1,4 +1,4 @@
-#First meeting
+# First meeting
 
 [Drawing and Notes of 1st meeting](media/First_meeting_notes.png)
 
