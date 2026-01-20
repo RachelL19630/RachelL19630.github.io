@@ -1,5 +1,6 @@
-h1{
-	background-color: BlanchedAlmond;
+body{
+	background-color:#e7eaf6;
+	color:#113f67;
 }
 #homepage{
 	display:grid;
@@ -14,23 +15,21 @@ h1{
 }
 #nav{
 	grid-area:nav;
-	color:black;
 	text-align:center;
 }
 #hero{
 	grid-area:hero;
-	color:black;
 }
 #mission{
 	grid-area:mission;
 	text-align:center;
-	color:black;
 	font-size: 50px;
 }
 #foot{
 	grid-area:foot;
 	text-align:center;
-	color:black;
+	background-color: #38598b;
+	color:#e7eaf6;
 }
 img{
 	margin:auto;
@@ -46,13 +45,13 @@ img{
 #home{
 	grid-area:home;
 	border: solid black;
-	color:black;
+	background-color:#a2a8d3;
 	font-size:4vh;
 	text-align:center;
 }
 #about{
 	grid-area:about;
-	color:black;
+	background-color:#a2a8d3;
 	font-size:4vh;
 	border: solid black;
 	text-align:center;
@@ -61,20 +60,30 @@ img{
 	grid-area:activities;
 	border: solid black;
 	font-size:4vh;
-	color:black;
+	background-color:#a2a8d3;
 	text-align:center;
 }
 #accomodations{
 	grid-area:accomodations;
 	border: solid black;
 	font-size:4vh;
-	color:black;
+	background-color:#a2a8d3;
 	text-align:center;
 }
 #FAQ{
 	grid-area:FAQ;
 	font-size:4vh;
+	background-color:#a2a8d3;
 	border: solid black;
-	color:black;
 	text-align:center
 }
+#house_pics{
+	display:grid;
+	height:100vh;
+	gap: 10px;
+	grid:
+	'drone pond outside1'1fr
+	'outside2 garage bedroom1'1fr 
+	'bedroom2 kitchen living-room'
+	'
+
