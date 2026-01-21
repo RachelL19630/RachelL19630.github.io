@@ -82,8 +82,72 @@ img{
 	height:100vh;
 	gap: 10px;
 	grid:
-	'drone pond outside1'1fr
-	'outside2 garage bedroom1'1fr 
-	'bedroom2 kitchen living-room'
-	'
-
+	'drone pond outside1 outisde2'1fr
+	'garage bedroom1 bedroom2 kitchen'1fr 
+	'living-room bunkbeds bathroom1 bathroom2'1fr
+	'view1 view2 extra1 extra2'1fr
+	/1fr 1fr 1fr 1fr;	
+}
+#drone{
+	grid-area:drone;
+}
+#pond{
+	grid-area:pond;
+}
+#outside1{
+	grid-area:outside1;
+}
+#outside2{
+	grid-area:outside2;
+}
+#garage{
+	grid-area:garage;
+}
+#bedroom1{
+	grid-area:bedroom1;
+}
+#bedroom2{
+	grid-area:bedroom2;
+}
+#kitchen{
+	grid-area:kitchen;
+}
+#living-room{
+	grid-area:living-room;
+}
+#bunkbeds{
+	grid-area:bunkbeds;
+}
+#bathroom1{
+	grid-area:bathroom1;
+}
+#bathroom2{
+	grid-area:bathroom2;
+}
+#view1{
+	grid-area:view1;
+}
+#extra1{
+	grid-area:extra1;
+}
+#extra2{
+	grid-area:extra2;
+}
+#about_us-layout{
+	display:grid;
+	height:100vh;
+	gap:40px;
+	grid:
+	'image-eagle about_us-text'1fr
+	/1fr 2fr;
+}
+#image-eagle{
+	grid-area:image-eagle;
+}
+#about_us-text{
+	grid-area:about_us-text;
+	overflow: hidden;
+}
+#inside-eagle{
+	margin-top:40px;
+}
