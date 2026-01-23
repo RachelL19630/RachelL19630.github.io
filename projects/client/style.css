@@ -20,6 +20,10 @@ body{
 #hero{
 	grid-area:hero;
 }
+#mountain_eagle{
+	display:block;
+	margin: auto;
+}
 #mission{
 	grid-area:mission;
 	text-align:center;
@@ -33,6 +37,7 @@ body{
 }
 img{
 	margin:auto;
+	display: block;
 }
 #searchbar{
 	display:grid;
@@ -82,7 +87,7 @@ img{
 	height:100vh;
 	gap: 10px;
 	grid:
-	'drone pond outside1 outisde2'1fr
+	'drone pond outside1 outside2'1fr
 	'garage bedroom1 bedroom2 kitchen'1fr 
 	'living-room bunkbeds bathroom1 bathroom2'1fr
 	'view1 view2 extra1 extra2'1fr
@@ -151,3 +156,18 @@ img{
 #inside-eagle{
 	margin-top:40px;
 }
+#faq-section{
+	border:solid black;
+	background-color:#a2a8d3;
+	font-size: 40px;
+}
+#Question1{
+	border:solid black;
+}
+#Question2{
+	border:solid black;
+}
+#Question3{
+	border:solid black;
+}
+
