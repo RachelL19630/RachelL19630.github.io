@@ -170,4 +170,37 @@ img{
 #Question3{
 	border:solid black;
 }
-
+#activity-page{
+	display:grid;
+	height:100vh;
+	grid:
+	'swimming boating'1fr
+	'fishing hiking'1fr
+	'pickleball relaxing'1fr
+       	'any-other1 any-other2'1fr
+	/1fr 1fr;
+}	
+#swimming{
+	grid-area:swimming;
+}
+#boating{
+	grid-area:boating;
+}
+#fishing{
+	grid-area:fishing;
+}
+#hiking{
+	grid-area:hiking;
+}
+#pickleball{
+	grid-area:pickleball;
+}
+#relaxing{
+	grid-area:relaxing;
+}
+#any-other1{
+	grid-area:any-other1;
+}
+#any-other2{
+	grid-area:any-other2;
+}
