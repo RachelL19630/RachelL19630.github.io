@@ -41,6 +41,7 @@ img{
 }
 #searchbar{
 	display:grid;
+	margin-bottom:10px;
 	height:5vh;
 	gap:5px;
 	grid:
@@ -87,11 +88,14 @@ img{
 	height:100vh;
 	gap: 10px;
 	grid:
-	'drone pond outside1 outside2'1fr
-	'garage bedroom1 bedroom2 kitchen'1fr 
-	'living-room bunkbeds bathroom1 bathroom2'1fr
-	'view1 view2 extra1 extra2'1fr
-	/1fr 1fr 1fr 1fr;	
+	'drone pond'1fr
+       'outside1 outside2'1fr
+	'garage bedroom1'1fr
+       'bedroom2 extra1'1fr 
+	'bathroom1 bathroom2'1fr
+	'bunkbeds extra2'1fr
+	'kitchen living-room'1fr
+	/1fr 1fr;	
 }
 #drone{
 	grid-area:drone;
@@ -129,8 +133,6 @@ img{
 #bathroom2{
 	grid-area:bathroom2;
 }
-#view1{
-	grid-area:view1;
 }
 #extra1{
 	grid-area:extra1;
