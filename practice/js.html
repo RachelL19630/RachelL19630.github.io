@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Trying JS on my own</title>
+<style>
+#canvas1{
+	position: absolute;
+	height:10%;
+	width:20%;
+	background-color:black;
+}
+</style>
+<script>
+	function draw(){
+		const canvas = document.getElementById("canvas1");
+		const ctx = canvas.getContext("2d");
+		ctx.fillStyle = "blue";
+		ctx.fillRect(10, 10, 50, 50);
+	}
+	draw();
+</script>
+<body>
+	<canvas id="canvas1"></canvas>
