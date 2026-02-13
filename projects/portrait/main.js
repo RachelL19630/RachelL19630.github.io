@@ -21,10 +21,8 @@
 
 	ctx.fillStyle="orange"
 	ctx.beginPath();
-	ctx.arc(0,800,300,0,-Math.PI/2);
-	ctx.lineTo(500,300);
-	ctx.arc(500,300,300,Math.PI/2,0);
-	ctx.lineTo(0,800);
+	ctx.arc(0,800,300,Math.PI,Math.PI/2);
+	ctx.arc(500,300,300,Math.PI/2,2*Math.PI);
 	ctx.fill();
 	//neck
 	ctx.fillStyle="green"
