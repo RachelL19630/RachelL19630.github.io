@@ -6,17 +6,74 @@
 	ctx.fillStyle="blue";
 	ctx.strokeStyle="#black";
 	ctx.lineWidth = 10;
-
+	//back of hair
+	ctx.fillStyle="#5d4528"
+	ctx.fillRect(225,300,400,400);
+	ctx.fill();
 	//arc(x,y,radius,start,stop)
 	ctx.fillStyle="#676767";
 	ctx.fillRect(50,600,700,400);
 	ctx.fillRect(150,525,500,200);
 	//color it in
-	ctx.fill();
-	ctx.stroke();
-
+ctx.fill();
+ctx.stroke();
+	//necklace
+	ctx.beginPath();
+	ctx.ellipse(
+		490,630,
+		112,
+		40,
+		Math.PI/2,
+		Math.PI,0
+	)
+ctx.stroke();
+	ctx.beginPath();
+	ctx.ellipse(
+		325,630,
+		112,
+		40,
+		Math.PI/2,
+		0,Math.PI
+	)	
+ctx.stroke();
+	ctx.beginPath();
+	ctx.lineTo(325,742);
+	ctx.lineTo(490,742);
+ctx.stroke();
+	ctx.beginPath();
+	ctx.fillStyle="#04A07C";
+	ctx.ellipse(
+		412,780,
+		60,
+		40,
+		Math.PI/2,
+		0,2*Math.PI
+	)
+//inscription
+ctx.lineWidth= 8;
+ctx.strokeStyle="#02503e";
+ctx.fill();
+	ctx.beginPath();
+	ctx.lineTo(400,740);
+	ctx.lineTo(400,800);
+	ctx.lineTo(425,800);
+	ctx.lineTo(400,775);
+ctx.stroke();
+	ctx.beginPath();
+	ctx.ellipse(
+		403,758,
+		14,
+		26,
+		Math.PI/2,
+		Math.PI,0
+	)
+ctx.stroke();
+	ctx.beginPath();
+	ctx.lineTo(400,758);
+	ctx.lineTo(426,758);
+ctx.stroke();
 	//neck
-	ctx.fillStyle="tan"
+	ctx.fillStyle="#ddb0a0";
 	ctx.fillRect(320,450,175,120);
 	ctx.beginPath();
 	ctx.lineTo(320,570);
@@ -25,7 +82,7 @@
 	ctx.fill();
 	//head
 	ctx.beginPath();
-	ctx.fillStyle="tan"
+	ctx.fillStyle="#ddb0a0";
 	ctx.ellipse(
 		395,250, //x,y of the center
 		250, //radius along the x axis
@@ -36,23 +93,25 @@
 	ctx.fill();
 //eyebrows
 	ctx.beginPath();
-	ctx.fillStyle="#795548"
+	ctx.fillStyle="#795548";
 	ctx.ellipse(
 		320,220,
 		60,
-		10,
+		15,
 		0,
 		Math.PI,0
 	)
 	ctx.ellipse(
 		510,220,
 		60,
-		10,
+		15,
 		0,
 		Math.PI,0
 	)
 	ctx.fill();
 //nose
+	ctx.beginPath();
+	ctx.fillStyle="#c69e90";
 	ctx.fillRect(394,240,42,80);
 	ctx.fill();
 	ctx.beginPath();
@@ -84,11 +143,11 @@ ctx.beginPath();
 	ctx.fill();
 //teeth
 ctx.beginPath();
-ctx.fillStyle="white"
+ctx.fillStyle="white";
 ctx.fillRect(353,420,120,5);
 ctx.fill();
 //mouth
-ctx.fillStyle="red"
+ctx.fillStyle="#b46565";
 ctx.beginPath();
 ctx.ellipse(
 	383,420,
@@ -117,7 +176,7 @@ ctx.ellipse(
 )
 ctx.fill();
 	//hair
-	ctx.fillStyle="#795548"
+	ctx.fillStyle="#795548";
 	ctx.beginPath();
 	ctx.lineTo(200,150);
 	ctx.lineTo(575,150);
@@ -127,12 +186,14 @@ ctx.fill();
 	ctx.lineTo(600,1);
 	ctx.lineTo(200,1);
 	ctx.lineTo(100,300);
-	ctx.lineTo(50,700);
+	ctx.lineTo(30,700);
 	ctx.lineTo(250,700);
 	ctx.lineTo(250,100);
 	ctx.fill();
 //glasses
 ctx.beginPath();
+ctx.strokeStyle="#03785D";
+ctx.lineWidth= 13;
 ctx.ellipse(
 	320,290,
 	80,
@@ -151,7 +212,7 @@ ctx.ellipse(
 )
 ctx.stroke();
 ctx.beginPath();
-ctx.lineTo(400,300)
+ctx.lineTo(400,300);
 ctx.lineTo(400,210);
 ctx.stroke();
 ctx.beginPath();
@@ -177,7 +238,7 @@ ctx.ellipse(
 )
 ctx.stroke();
 ctx.beginPath();
-ctx.lineTo(590,300)
+ctx.lineTo(590,300);
 ctx.lineTo(590,210);
 ctx.stroke();
 ctx.beginPath();
@@ -190,7 +251,7 @@ ctx.lineTo(430,250);
 ctx.stroke();
 	//eye
 	ctx.beginPath();
-	ctx.fillStyle="white"
+	ctx.fillStyle="white";
 	ctx.ellipse(
 	320,255,
 	60,
@@ -200,7 +261,7 @@ ctx.stroke();
 	)
 ctx.fill();
 	ctx.beginPath();
-	ctx.fillStyle="white"
+	ctx.fillStyle="white";
 	ctx.ellipse(
 	510,255,
 	60,
@@ -210,18 +271,18 @@ ctx.fill();
 	)
 ctx.fill();
 	ctx.beginPath();
-	ctx.fillStyle="blue"
+	ctx.fillStyle="#307D7e";
 	ctx.arc(320,255,25,0,2*Math.PI);
 	ctx.fill();
 	ctx.beginPath();
-	ctx.fillStyle="black"
+	ctx.fillStyle="black";
 	ctx.arc(320,255,15,0,2*Math.PI);
 	ctx.fill();
 ctx.beginPath();
-ctx.fillStyle="blue"
+ctx.fillStyle="#307D7e";
 ctx.arc(510,255,25,0,2*Math.PI);
 ctx.fill();
 ctx.beginPath();
-	ctx.fillStyle="black"
+	ctx.fillStyle="black";
 	ctx.arc(510,255,15,0,2*Math.PI);
 	ctx.fill();
