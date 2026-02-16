@@ -11,7 +11,7 @@
 	ctx.fillRect(225,300,400,400);
 	ctx.fill();
 	//arc(x,y,radius,start,stop)
-	ctx.fillStyle="#676767";
+	ctx.fillStyle="#06402B";
 	ctx.fillRect(50,600,700,400);
 	ctx.fillRect(150,525,500,200);
 	//color it in
