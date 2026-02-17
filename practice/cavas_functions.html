@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Canvas - with functions!</title>
+	</head>
+	<body>
+		<h1>Canvas - with functions!</h1>
+		<canvas width=800 height=800 id="myCanvas">
+		</canvas>
+		<script>
+			const canvas = document.getElementById("myCanvas");
+			const ctx = canvas.getContext("2d");
+
+			ctx.fillRect(100,100,100,100);
+
+			//wouldn't it be nice if there were fillRectWithColor
+			//it would be just like fillRect, but an 
+			//extra parameter for color
+			//DO THAT
+			function fillRectWithColor(x,y,width,height,color){
+				ctx.fillStyle=color;
+				ctx.fillRect(x,y,width,height);
+			}
+			fillRectWithColor(0,0,800,800,"blue");
+			fillRectWithColor(600,600,100,100,"#A0C573");
+			
+			//let's make fillCircleWithColor
+			//DO THAT!
+			function fillCircleWithColor(x,y,r,color){
+				ctx.fillStyle= color;
+				ctx.beginPath();
+				ctx.arc(x,y,r,0,2*Math.PI);
+				ctx.fill();
+			}
+			fillCircleWithColor(600,80,50,"red");
+			fillCircleWithColor(300,400,50,"LemonChiffon");
+			//let's make a snowman!
+			//DO THAT!
+			function drawSnowman(x,y){
+				fillCircleWithColor(x,y-60,20,"white");//head
+				fillCircleWithColor(x,y,50,"white");//abdomen
+				fillCircleWithColor(x,y+115,75,"white");//bottom
+			}
+			drawSnowman(400,400);
+			drawSnowman(550,400);
+		</script>
+	</body>
+</html>
