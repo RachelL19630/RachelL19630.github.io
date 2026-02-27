@@ -26,42 +26,56 @@
 			x = x + speed;
 			time = time + 1;
 
-			if(time>40){
+			if(time>100){
 				//move red
 			x2 = x2 + speed2;
 			}
-			if (time>70){
+			if (time>350){
 				//move green
 			x3 = x3 + speed2;
 			}
+			if (time>550){
 			x4 = x4 + speed2;
+			}
+			if (time>750){
 			x5 = x5 + speed2;
+			}
+			if (time>950){
 			x6 = x6 + speed2;
+			}
+			if (time>1100){
 			x7 = x7 + speed2;
+			}
+			if (time>1300){
 			x8 = x8 + speed2;
+			}
+			if (time>1500){
 			x9 = x9 + speed2;
+			}
+			if (time>1700){
 			x10 = x10 + speed2;
+			}
 			ctx.clearRect(0,0,800,800);
 			ctx.fillStyle="red";
-			ctx.fillRect(x,y,10,10);
+			ctx.fillRect(x,y,250,25);
 			ctx.fillStyle="orange";
-			ctx.fillRect(x2,y,10,10);
+			ctx.fillRect(x2,y,225,50);
 			ctx.fillStyle="yellow";
-			ctx.fillRect(x3,y,10,10);
+			ctx.fillRect(x3,y,200,75);
 			ctx.fillStyle="green";
-			ctx.fillRect(x4,y,10,10);
+			ctx.fillRect(x4,y,175,100);
 			ctx.fillStyle="blue";
-			ctx.fillRect(x5,y,10,10);
+			ctx.fillRect(x5,y,150,125);
 			ctx.fillStyle="purple";
-			ctx.fillRect(x6,y,10,10);
+			ctx.fillRect(x6,y,125,150);
 			ctx.fillStyle="pink";
-			ctx.fillRect(x7,y,10,10);
+			ctx.fillRect(x7,y,100,175);
 			ctx.fillStyle="gray";
-			ctx.fillRect(x8,y,10,10);
+			ctx.fillRect(x8,y,75,200);
 			ctx.fillStyle="black";
-			ctx.fillRect(x9,y,10,10);
+			ctx.fillRect(x9,y,50,225);
 			ctx.fillStyle="brown";
-			ctx.fillRect(x10,y,10,10);
+			ctx.fillRect(x10,y,25,250);
 			requestAnimationFrame(animate); //input = function
 		}
 		animate();
