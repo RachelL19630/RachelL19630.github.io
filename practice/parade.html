@@ -4,8 +4,67 @@
 		<title>Parade</title>
 	</head>
 	<body>
-		<canvas width=800 height=800 id=MyCanvas></canvas>
+		<canvas width=800 height=800 id=myCanvas></canvas>
 		<script>
+			const canvas = document.getElementById("myCanvas");
+			const ctx = canvas.getContext("2d")
+			let y = 300;
+			let x = 1;
+			let x2 = 1;
+			let x3 = 1;
+			let x4 = 1;
+			let x5 = 1;
+			let x6 = 1;
+			let x7 = 1;
+			let x8 = 1;
+			let x9 = 1;
+			let x10 = 1;
+			let speed = 2;
+			let speed2 = 1;
+			let time = 0;
+		function animate(){
+			x = x + speed;
+			time = time + 1;
+
+			if(time>40){
+				//move red
+			x2 = x2 + speed2;
+			}
+			if (time>70){
+				//move green
+			x3 = x3 + speed2;
+			}
+			x4 = x4 + speed2;
+			x5 = x5 + speed2;
+			x6 = x6 + speed2;
+			x7 = x7 + speed2;
+			x8 = x8 + speed2;
+			x9 = x9 + speed2;
+			x10 = x10 + speed2;
+			ctx.clearRect(0,0,800,800);
+			ctx.fillStyle="red";
+			ctx.fillRect(x,y,10,10);
+			ctx.fillStyle="orange";
+			ctx.fillRect(x2,y,10,10);
+			ctx.fillStyle="yellow";
+			ctx.fillRect(x3,y,10,10);
+			ctx.fillStyle="green";
+			ctx.fillRect(x4,y,10,10);
+			ctx.fillStyle="blue";
+			ctx.fillRect(x5,y,10,10);
+			ctx.fillStyle="purple";
+			ctx.fillRect(x6,y,10,10);
+			ctx.fillStyle="pink";
+			ctx.fillRect(x7,y,10,10);
+			ctx.fillStyle="gray";
+			ctx.fillRect(x8,y,10,10);
+			ctx.fillStyle="black";
+			ctx.fillRect(x9,y,10,10);
+			ctx.fillStyle="brown";
+			ctx.fillRect(x10,y,10,10);
+			requestAnimationFrame(animate); //input = function
+		}
+		animate();
 
 		</script>
 	</body>
