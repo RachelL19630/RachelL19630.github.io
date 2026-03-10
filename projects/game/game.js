@@ -38,7 +38,7 @@ function garage() {
     print("\nYou are in the Garage!");
 	print("\nYou see big open Garage with what looks like a treadmill and weights on one side, and a dark coordidor on the other");
     print("\nWhere do you want to go next? Type one of these choices:" +
-        "\n\tHome" + "\n\tWorkout Equipment" + "\n\tDark Coridor");
+        "\n\tHome" + "\n\tWorkout Equipment" + "\n\tDark Corridor");
     
     function processInput(input){
         if (input.toLowerCase() === "home") {
@@ -67,7 +67,13 @@ function workoutEquipment(){
 		})
   })
 	print("\nSuddenly the equipment shudders and falls, crushing you beneath it!");
+	print("\nPress Go to continue")
+	function processInput(input){
+	if (input.toLowerCase() === "go"){
 	death();		
+}
+}
+waitForInput(processInput);
 }
 function death(){
 	clear();
@@ -88,6 +94,30 @@ print("\nYou died");
         }
 
 }
+function darkCorridor(){
+	clear();
+	print("\nYou enter the Corridor, seeing nothing, you continue down the corridor");
+  setTimeout(function() {
+                print("...");
+                setTimeout(function() {
+                    print("...");
+		})
+  })
+	print("\nAt the end of the corridor, you stumble upon a rack of Skis!");
+	haveskis = true;
+	print("\nYou collect your skis and are ready to go to the ski hill. Now return home" + "\n\tType Go Back Home");
+	function processInput(input){
+		if(input.toLowerCase() === "go back home"){
+			home();
+		}
+		else{
+			stayHere();
+			waitThenCall(darkCorridor);
+		}
+	}
+waitForInput(processInput);
+}
+	
 function car() {
     clear();
     print("\nYou are at the Car");
