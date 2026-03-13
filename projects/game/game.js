@@ -60,19 +60,8 @@ function garage() {
 function workoutEquipment(){
 	clear();
 	print("\nYou step closer to the workout equipment and notice that it is all stacked on top of each other");
-  setTimeout(function() {
-                print("...");
-                setTimeout(function() {
-                    print("...");
-		})
-  })
 	print("\nSuddenly the equipment shudders and falls, crushing you beneath it!");
-	print("\nPress Go to continue")
-	function processInput(input){
-	if (input.toLowerCase() === "go"){
 	waitThenCall(death);		
-}
-}
 waitForInput(processInput);
 }
 function death(){
@@ -139,10 +128,10 @@ function car() {
 function ride() {
 	clear();
 	if (haveskis === true){
-		waitThenCall(winningdrive);
+		winningdrive();
 	}
 	else{
-		waitThenCall(carAccident);
+		carAccident();
 	}
 
 waitForInput(processInput);
@@ -216,7 +205,7 @@ function niceBear(){
 	print("\nThe bear sniffs it and gestures at you to follow him");
 	print("\nYou follow the bear down a winding path, before stumbling upon the garage again.");
 	print("\nThe bear nod towards the Dark Corridor. Following his instructions, you head down the corridor.");
-	waitThenCall(darkCorridor);
+	waitLongerThenCall(darkCorridor);
 }
 function bearAttack(){
 	print("\nThe bear sniffs you, and decides you smell like food");
@@ -231,7 +220,7 @@ function bonfire() {
     function processInput(input){
         if (input.toLowerCase() === "back to the meadow") {
             meadow();
-        } else if (input.toLowerCase() === "sit at  the fire"){
+        } else if (input.toLowerCase() === "sit at the fire"){
 		burnedAlive();
 	}else{
             stayHere();
