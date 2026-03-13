@@ -70,7 +70,7 @@ function workoutEquipment(){
 	print("\nPress Go to continue")
 	function processInput(input){
 	if (input.toLowerCase() === "go"){
-	death();		
+	waitThenCall(death);		
 }
 }
 waitForInput(processInput);
@@ -92,7 +92,7 @@ print("\nYou died");
                 print("Please type 'yes' or 'no'");
             }
         }
-
+waitForInput(processInput);
 }
 function darkCorridor(){
 	clear();
@@ -139,10 +139,10 @@ function car() {
 function ride() {
 	clear();
 	if (haveskis === true){
-		winningdrive();
+		waitThenCall(winningdrive);
 	}
 	else{
-		carAccident();
+		waitThenCall(carAccident);
 	}
 
 waitForInput(processInput);
@@ -151,15 +151,12 @@ function carAccident(){
 	clear();
 	print("\nYou get into your car, the seats are nice a plush.");
 	print("\nThey");
-	print("\n...");
 	print("\nfeel");
-	print("\n...");
 	print("\nso");
-	print("\n...");
 	print("\ncomforting");
 	print("\nYour eyes close and head droops");
 	print("\nSuddenly! Your car swerves and you slam into a metal pole");
-	death();
+	waitThenCall(death);
 }
 function winningdrive(){
 	clear();
@@ -171,6 +168,10 @@ function winningdrive(){
 		if (input.toLowerCase() === "yes"){
 			start();
 		}
+		else{
+			stayHere();
+			waitThenCall(winningdrive);
+		}
 }
 waitforInput(processInput);
 }
@@ -178,7 +179,7 @@ function meadow() {
     clear();
     print("\nYou are in the meadow");
     print("\nWhere do you want to go next? Type one of these choices:" +
-        "\n\tHome" +"\n\tBonfire");
+        "\n\tHome" +"\n\tBonfire" + "\n\tGo for a Walk");
     
     function processInput(input){
         if (input.toLowerCase() === "home") {
@@ -187,6 +188,9 @@ function meadow() {
 	    else if (input.toLowerCase() === "bonfire"){
 		bonfire();
 	}
+	    else if (input.toLowerCase() === "go for a walk"){
+		    walk();
+	    }
 	    else {
             stayHere();
             waitThenCall(meadow);
@@ -194,26 +198,61 @@ function meadow() {
     }
     waitForInput(processInput);
 }
+function walk(){
+	clear();
+	print("\nYou walk further into the meadow and come across a hiking trail in the forest.");
+	print("\nYou decide to continue down it");
+	print("Suddenly! A bear comes out of the woods!");
+	if (havemeat === true){
+		waitThenCall(niceBear);
+	}
+	else{
+		waitThenCall(bearAttack);
+	}
+}
+function niceBear(){
+	clear();
+	print("\nRemembering the meat you took from the bonfire, you shove the meat in the bears face.");
+	print("\nThe bear sniffs it and gestures at you to follow him");
+	print("\nYou follow the bear down a winding path, before stumbling upon the garage again.");
+	print("\nThe bear nod towards the Dark Corridor. Following his instructions, you head down the corridor.");
+	waitThenCall(darkCorridor);
+}
+function bearAttack(){
+	print("\nThe bear sniffs you, and decides you smell like food");
+	waitThenCall(death);
+}
 function bonfire() {
     clear();
     print("\nYou are at the Bonfire");
     print("\nWhere do you want to go next? Type one of these choices:" +
-        "\n\tBack to the Meadow");
-    
+        "\n\tBack to the Meadow" + "\n\tSit at the fire");
+   havemeat = true
     function processInput(input){
         if (input.toLowerCase() === "back to the meadow") {
             meadow();
-        } else {
+        } else if (input.toLowerCase() === "sit at  the fire"){
+		burnedAlive();
+	}else{
             stayHere();
-            waitThenCall(locationA);
+            waitThenCall(bonfire);
         }
     }
     waitForInput(processInput);
+}
+function burnedAlive(){
+	clear();
+	print("\nYou walk over and sit at the fire. The fire is warm and comforting");
+	print("\nSUDDENLY a lightning strike hit the bonfire and the bonfire explodes outwards hitting you!");
+	waitThenCall(death);
 }
 //finally, make sure you customize this to tell it what should happen at the
 //very start. For this simple example, any input will bring you
 //to locationA
 function start(){
+	clear();
+	haveskis = false
+	havemeat = false
     print("Welcome to my game! Press any key to start");
 
     function processInput(input){
