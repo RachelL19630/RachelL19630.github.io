@@ -122,17 +122,57 @@ function car() {
     clear();
     print("\nYou are at the Car");
     print("\nWhere do you want to go next? Type one of these choices:" +
-        "\n\tGo Back Home");
+        "\n\tGo Back Home" + "\n\tGo for a Ride");
     
     function processInput(input){
         if (input.toLowerCase() === "go back home") {
             home();
-        } else {
+        } else if (input.toLowerCase() === "go for a ride"){
+		ride();
+	}else{
             stayHere();
             waitThenCall(car);
         }
     }
     waitForInput(processInput);
+}
+function ride() {
+	clear();
+	if (haveskis === true){
+		winningdrive();
+	}
+	else{
+		carAccident();
+	}
+
+waitForInput(processInput);
+}
+function carAccident(){
+	clear();
+	print("\nYou get into your car, the seats are nice a plush.");
+	print("\nThey");
+	print("\n...");
+	print("\nfeel");
+	print("\n...");
+	print("\nso");
+	print("\n...");
+	print("\ncomforting");
+	print("\nYour eyes close and head droops");
+	print("\nSuddenly! Your car swerves and you slam into a metal pole");
+	death();
+}
+function winningdrive(){
+	clear();
+	print("\nYou get into your car and drive off");
+	print("\nYou arrive at the ski hill and have a fun day of skiing.");
+	print("\nCONGRATS ON SURVIVING!");
+	print("\nType yes to start over");
+	function processInput(input){
+		if (input.toLowerCase() === "yes"){
+			start();
+		}
+}
+waitforInput(processInput);
 }
 function meadow() {
     clear();
