@@ -3,11 +3,19 @@ const ctx = canvas.getContext("2d");
 
 const ballRadius = 10;
 
-let x = Math.random()*800;
-let y = Math.random()*800;
+const balls = [];
 
-let dx = 2;
-let dy = -2;
+for(let i = 0; i<100; i+=1){
+	//make a JavaScript ball object
+	const ball = {
+		x:Math.random()*800,
+		y:Math.random()*800,
+		dx:2,
+		dy:-2,
+	}
+	//add the ball to the array
+	balls.push(ball);
+}
 
 const paddleHeight = 10;
 const paddleWidth = 75;
@@ -18,18 +26,19 @@ let leftPressed = false;
 
 let interval = 0;
 
-const brickRowCount = 3;
+const brickRowCount = 4;
 const brickColumnCount = 5;
-const brickWidth = 75;
+const brickWidth = 100;
 const brickHeight = 20;
-const brickPadding = 10;
+const brickPadding = 30;
 const brickOffsetTop = 30;
-const brickOffsetLeft = 30;
+const brickOffsetLeft = 70;
 
 
 function drawBricks(){
   for (let c = 0; c < brickColumnCount; c++) {
     for (let r = 0; r < brickRowCount; r++) {
+	    ctx.fillRect(c*(brickWidth+brickPadding)+brickOffsetLeft,r*(brickHeight+brickPadding)+brickOffsetTop,brickWidth,brickHeight);
       //TODO: use the variables above to write the code that draws the bricks.
       //this should be a single function call to ctx.fillRect();
     }
@@ -56,11 +65,14 @@ document.addEventListener("keydown", keyDownHandler);
 document.addEventListener("keyup", keyUpHandler);
 
 function drawBall() {
+  for(const ball of balls){
   ctx.beginPath();
-  ctx.arc(x, y, ballRadius, 0, Math.PI * 2);
+  ctx.arc(ball.x,ball.y, ballRadius, 0, Math.PI * 2);
   ctx.fill();
   ctx.closePath();
 }
+}
+
 function drawPaddle() {
   ctx.beginPath();
   ctx.rect(paddleX, canvas.height - paddleHeight, paddleWidth, paddleHeight);
@@ -74,12 +86,15 @@ function draw() {
   drawPaddle();
   drawBricks();
 
-  if (x + dx > canvas.width - ballRadius || x + dx < ballRadius) {
-    dx = -dx;
+	for(const ball of balls){
+  if (ball.x + ball.dx > canvas.width - ballRadius || ball.x + ball.dx < ballRadius) {
+    ball.dx = -ball.dx;
   }
-  if (y + dy < ballRadius || y + dy > canvas.height - ballRadius) {
-    dy = -dy;
+  if (ball.y + ball.dy < ballRadius || ball.y + ball.dy > canvas.height - ballRadius) {
+    ball.dy = -ball.dy;
   }
+	}
+
 
   if (rightPressed && paddleX < canvas.width - paddleWidth) {
     paddleX += 7;
@@ -88,9 +103,11 @@ function draw() {
   }
 
   //move the ball
-  x += dx;
-  y += dy;
-
+	for(const ball of balls){
+  ball.x += ball.dx;
+  ball.y += ball.dy;
+	}	
   requestAnimationFrame(draw);
 }
 
+draw();
