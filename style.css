@@ -12,3 +12,32 @@ h1{
 	border-bottom: dashed darkgray;
 	padding-bottom: 10px;
 }	
+#searchbar{
+	display:grid;
+	margin-bottom:10px;
+	height:5vh;
+	gap:5px;
+	grid:
+'home about activities accomodations FAQ' 1fr
+/1fr	 1fr	 1fr		 1fr	 1fr;
+}
+#home{
+	grid-area:home;
+	border: solid black;
+	background-color:#a2a8d3;
+	font-size:4vh;
+	text-align:center;
+}
+#about{
+	grid-area:about;
+	background-color:#a2a8d3;
+	font-size:4vh;
+	border: solid black;
+	text-align:center;
+}
+#activities{
+	grid-area:activities;
+	border: solid black;
+	font-size:4vh;
+	background-color:#a2a8d3;
+	text-align:center;
