@@ -11,7 +11,10 @@ h1{
 #ERQuote{
 	border-bottom: dashed darkgray;
 	padding-bottom: 10px;
-}	
+}
+#homepage{
+	color:black;
+}
 #searchbar{
 	display:grid;
 	margin-bottom:10px;
@@ -41,3 +44,85 @@ h1{
 	font-size:4vh;
 	background-color:#a2a8d3;
 	text-align:center;
+}
+#project-spaces{
+	display:grid;
+	margin-bottom:10px;
+	height:5vh;
+	gap:5px;
+	grid:
+'project1 project2 project3'1fr 
+'project4 project5 project6'1fr
+/1fr	 1fr	 1fr;i
+}
+#project1{
+	grid-area:project1;
+	border:solid black;
+}
+#project2{
+	grid-area:project2;
+	border:solid black;
+}
+#project3{
+	grid-area:project3;
+	border:solid black;
+}
+#project4{
+	grid-area:project4;
+	border:solid black;
+}
+#project5{
+	grid-area:project5;
+	border:solid black;
+}
+#project6{
+	grid-area:project6;
+	border:solid black;
+}
+#awards-hero{
+	display:grid;
+	margin-bottom:10px;
+	height:5vh;
+	gap:5px;
+	grid:
+'award1 award2 award3'1fr 
+'award4 award5 award6'1fr
+'award7 award8 award7'1fr
+/1fr	 1fr	 1fr;
+}
+#award1{
+	grid-area:award1;
+	border:solid black;
+}
+#award2{
+	grid-area:award2;
+	border:solid black;
+}
+#award3{
+	grid-area:award3;
+	border:solid black;
+}
+#award4{
+	grid-area:award4;
+	border:solid black;
+}
+#award5{
+	grid-area:award5;
+	border:solid black;
+}
+#award6{
+	grid-area:award6;
+	border:solid black;
+}
+#award7{
+	grid-area:award7;
+	border:solid black;
+}
+#award8{
+	grid-area:award8;
+	border:solid black;
+}
+#award9{
+	grid-area:award9;
+	border:solid black;
+}
