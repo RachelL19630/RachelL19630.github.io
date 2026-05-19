@@ -28,20 +28,20 @@ h1{
 	grid-area:home;
 	border: solid black;
 	background-color:#a2a8d3;
-	font-size:4vh;
+	font-size:3vh;
 	text-align:center;
 }
 #about{
 	grid-area:about;
 	background-color:#a2a8d3;
-	font-size:4vh;
+	font-size:3vh;
 	border: solid black;
 	text-align:center;
 }
 #activities{
 	grid-area:activities;
 	border: solid black;
-	font-size:4vh;
+	font-size:3vh;
 	background-color:#a2a8d3;
 	text-align:center;
 }
@@ -87,7 +87,7 @@ h1{
 	grid:
 'award1 award2 award3'1fr 
 'award4 award5 award6'1fr
-'award7 award8 award7'1fr
+'award7 award8 award9'1fr
 /1fr	 1fr	 1fr;
 }
 #award1{
