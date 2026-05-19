@@ -8,6 +8,10 @@ h1{
 	border: solid gray;
 	margin: auto;
 }
+img{
+	margin:auto;
+	display: block;
+}
 #ERQuote{
 	border-bottom: dashed darkgray;
 	padding-bottom: 10px;
